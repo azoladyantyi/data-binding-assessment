@@ -1,12 +1,16 @@
 using System;
+using System.ComponentModel;
+
+
 
 namespace FlagData
 {
     /// <summary>
     /// This model object represents a single flag
     /// </summary>
-    public class Flag
+    public class Flag : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// Name of the country that this flag belongs to
         /// </summary>
